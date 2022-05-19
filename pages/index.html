@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/stylesheet.css" />
+    <title>Restourant</title>
+</head>
+
+<body>
+    <!-- ================================ START SECTION =============================== -->
+    <section>
+        <!-- ================================ START IMAGE =============================== -->
+        <div class="image">
+            <img name="slide" />
+        </div>
+
+        <!-- ================================ START HEADER =============================== -->
+
+        <header>
+            <h1 class="title">Restaurant</h1>
+
+            <form>
+                <input type="search" onkeyup="search()" class="search" placeholder="Search Meal" />
+            </form>
+        </header>
+
+        <!-- ================================ START MAIN =============================== -->
+        <main>
+            <div class="app_content">
+                <h2>MENU:</h2>
+                <ul class="app_list"></ul>
+            </div>
+
+            <div class="app_form">
+                <form onsubmit="addOrder(event) ">
+                    <input type="text " class="app_order" />
+                    <button class="btn_add">Add</button>
+                </form>
+
+                <button class="clear" onclick="clearn(this)"></button>
+            </div>
+        </main>
+    </section>
+    <!-- ================================ END SECTION =============================== -->
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
